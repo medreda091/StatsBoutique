@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: boutique
+      POSTGRES_PASSWORD: boutique
+      POSTGRES_DB: stats_boutique
+    ports:
+      - "5432:5432"
+    volumes:
+      # Les scripts SQL sont joués dans l'ordre au premier démarrage.
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./sql/donnees.sql:/docker-entrypoint-initdb.d/02-donnees.sql:ro
+      - ./sql/vues.sql:/docker-entrypoint-initdb.d/03-vues.sql:ro
+      - donnees_postgres:/var/lib/postgresql/data
+
+volumes:
+  donnees_postgres:
