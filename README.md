@@ -62,10 +62,11 @@ make db
 make psql
 ```
 
-Puis, dans psql :
+Puis, pour exécuter une requête :
 
-```sql
-\i sql/requetes/01_ca_mensuel_croissance.sql
+```bash
+docker compose exec -T db psql -U boutique -d stats_boutique \
+  < sql/requetes/01_ca_mensuel_croissance.sql
 ```
 
 ### Option 2 — test rapide sans Docker
