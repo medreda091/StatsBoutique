@@ -10,7 +10,7 @@ nettoyer le besoin métier, écrire la requête, vérifier le résultat avec des
 
 - `sql/schema.sql` — 6 tables : clients, catégories, produits, commandes,
   lignes de commande, avis (+ index).
-- `sql/donnees.sql` — jeu de données réaliste généré par script :
+- `sql/donnees.sql` — jeu de données réaliste construit avec le script :
   200 clients, 40 produits, 1 400 commandes, 450 avis.
 - `sql/vues.sql` — 3 vues pour simplifier les analyses
   (`vue_lignes_detail`, `vue_ca_mensuel`, `vue_stats_produits`).

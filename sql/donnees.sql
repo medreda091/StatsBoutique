@@ -1,6 +1,6 @@
 -- =================================================================
 -- StatsBoutique — jeu de données de démonstration
--- Généré par scripts/generer_donnees.py (graine 42, déterministe).
+-- Construit avec scripts/generer_donnees.py (graine 42, déterministe).
 -- 200 clients, 40 produits, 1400 commandes, 450 avis.
 -- =================================================================
 

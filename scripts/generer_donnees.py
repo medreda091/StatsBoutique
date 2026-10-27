@@ -84,7 +84,7 @@ def main() -> None:
     lignes_sql = [
         "-- =================================================================",
         "-- StatsBoutique — jeu de données de démonstration",
-        "-- Généré par scripts/generer_donnees.py (graine 42, déterministe).",
+        "-- Construit avec scripts/generer_donnees.py (graine 42, déterministe).",
         f"-- {NB_CLIENTS} clients, 40 produits, {NB_COMMANDES} commandes, {NB_AVIS} avis.",
         "-- =================================================================",
         "",
